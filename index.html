@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Offline</title>
+    <meta charset="UTF-8">
+    <title>Offline</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-image: url("https://th.bing.com/th/id/R.90b0dcad8c8e8cf91af7a9d76abc3646?rik=zTAET8K0O0md9g&riu=http%3a%2f%2fpacomondragon.com%2fimg%2funder-construction.jpg&ehk=sp9vLL1r%2bC%2f7x7mKsRBPyjpXaAMsgGPlVIh7IKdG0pc%3d&risl=1&pid=ImgRaw&r=0");
+            background-size: cover;
+            background-position: top center; /* Adjusted position */
+            background-repeat: no-repeat;
+        }
+        .content {
+            padding: 3em;
+            text-align: center;
+            color: white; /* Optional: Makes text more readable */
+        }
+    </style>
 </head>
-<body style="margin:3em;font-family:sans-serif">
-  <h2>Offline</h2>
-  <p>This site is offline for maintenance.</p>
-  <!--       
-    Adding some hidden content so that IE "Friendly Errors" don't keep
-    this message from displaying. (It will show a "friendly" 404
-    error if the content isn't at least 512 bytes.)
-    This is mostly a problem for IE6 which has "Friendly Errors" on by default.
-    See http://weblogs.asp.net/scottgu/App_5F00_Offline.htm-and-working-around-the-_2200_IE-Friendly-Errors_2200_-feature
-    
-    <h2>This site is offline.</h2>
-    <h2>This site is offline.</h2>
-    <h2>This site is offline.</h2>
-    <h2>This site is offline.</h2>
-    <h2>This site is offline.</h2>
-    -->
+<body>
+    <div class="content">
+        <h2>Offline</h2>
+        <p>This site is offline for maintenance.</p>
+    </div>
+    <!-- Hidden content for IE "Friendly Errors" -->
+    <div style="display:none;">
+        <h2>This site is offline.</h2>
+        <h2>This site is offline.</h2>
+        <h2>This site is offline.</h2>
+        <h2>This site is offline.</h2>
+        <h2>This site is offline.</h2>
+    </div>
 </body>
 </html>
